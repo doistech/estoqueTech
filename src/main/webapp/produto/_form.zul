@@ -1,0 +1,76 @@
+<zk xmlns:h="http://www.w3.org/1999/xhtml" xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <div zclass="col-md-12">
+        <h:h3>Novo Produto</h:h3>
+        <n:hr/>
+    </div>
+    <div zclass="col-md-12" children="@load(vm.errorList)" visible="@load(vm.hasError)">
+        <h:div class="alert alert-danger" role="alert">
+            <template name="children" var="error">
+                <label value="@load(error)"/>
+            </template>
+        </h:div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Nome:</n:label>
+            <textbox zclass="form-control" value="@load(vm.produto.nome)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Sigla:</n:label>
+            <textbox zclass="form-control" value="@load(vm.produto.sigla)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Pedido Mínimo:</n:label><n:br/>
+            <spinner width="100%" style="height: 34px;" value="@load(vm.produto.pedidoMin)"></spinner>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Desconto:</n:label>
+            <doublebox zclass="form-control" value="@load(vm.produto.desconto)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Preço de Custo:</n:label>
+            <doublebox zclass="form-control" value="@load(vm.produto.precoCusto)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Preço de Venda:</n:label>
+            <doublebox zclass="form-control" value="@load(vm.produto.precoVenda)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Preço de Revenda:</n:label>
+            <doublebox zclass="form-control" value="@load(vm.produto.precoRevenda)"/>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Estoque Mínimo:</n:label><n:br/>
+            <spinner width="100%" style="height: 34px;" value="@load(vm.produto.estoqueMin)"></spinner>
+        </div>
+    </div>
+    <div zclass="col-md-4">
+        <div zclass="form-group">
+            <n:label>Categoria:</n:label><n:br/>
+            <combobox  width="100%">
+
+            </combobox>
+            <!--<spinner width="100%" style="height: 34px;"></spinner>-->
+        </div>
+    </div>
+    <div zclass="col-md-12">
+        <div zclass="form-group" style="text-align: right">
+            <button zclass="btn btn-success" label="Salvar" width="20%" onClick="@command('incluirProduto')"/>
+            <button zclass="btn btn-primary" label="Buscar" width="20%" disabled="true"/>
+        </div>
+    </div>
+</zk>

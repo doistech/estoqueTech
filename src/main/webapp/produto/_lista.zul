@@ -1,0 +1,31 @@
+<zk xmlns:h="http://www.w3.org/1999/xhtml" xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <div zclass="col-md-12">
+        <h:h3>Produtos</h:h3>
+        <n:hr/>
+    </div>
+    <div zclass="col-md-12">
+        <listbox id="box" width="100%" model="@load(vm.produtoList)">
+            <listhead >
+                <listheader label="Produto" sort="auto" />
+                <listheader label="Sigla" sort="auto" />
+                <listheader label="Categoria" sort="auto" />
+                <listheader label="Preço" sort="auto" />
+            </listhead>
+            <template name="model" var="produto">
+                <listitem>
+                    <listcell label="@load(produto.name)" />
+                    <listcell label="@load(produto.sigla)" />
+                    <listcell label=""/>
+                    <listcell label="@load(produto.precoVenda)" />
+                </listitem>
+            </template>
+        </listbox>
+    </div>
+    <div zclass="col-md-12">
+        <div zclass="form-group" style="text-align: right">
+            <h:br/>
+            <button zclass="btn btn-success" label="Novo Produro" width="20%" onClick="@command('novoProdutoFormVisible')"/>
+            <!--<button zclass="btn btn-primary" label="Buscar" width="20%" disabled="true"/>-->
+        </div>
+    </div>
+</zk>

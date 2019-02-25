@@ -1,0 +1,97 @@
+<zk xmlns:h="http://www.w3.org/1999/xhtml" xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <?link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"?>
+    <?link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"?>
+    <?script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"?>
+    <?link href="../assets/css/admin-estoquetech.css" type="text/css" rel="stylesheet"?>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+        }
+
+        .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+        min-height:200px;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+        .carousel-caption {
+        display: none;
+        }
+        }
+    </style>
+    <h:nav class="navbar navbar-inverse">
+        <h:div class="container-fluid">
+            <h:div class="navbar-header">
+                <h:button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <h:span class="icon-bar"></h:span>
+                    <h:span class="icon-bar"></h:span>
+                    <h:span class="icon-bar"></h:span>
+                </h:button>
+                <h:a class="navbar-brand" href="#">DOISTECH</h:a>
+            </h:div>
+            <h:div class="collapse navbar-collapse" id="myNavbar">
+                <h:ul class="nav navbar-nav">
+                    <h:li >
+                        <a href="#">Home</a>
+                    </h:li>
+                    <h:li>
+                        <h:a href="#">Quem Somos</h:a>
+                    </h:li>
+                    <h:li class="active">
+                        <h:a href="#">Projetos</h:a>
+                    </h:li>
+                    <h:li>
+                        <h:a href="#">Contato</h:a>
+                    </h:li>
+                </h:ul>
+                <h:ul class="nav navbar-nav navbar-right">
+                    <h:li>
+                        <h:a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            Login
+                        </h:a>
+                    </h:li>
+                </h:ul>
+            </h:div>
+        </h:div>
+    </h:nav>
+    <h:div class="container text-center">
+        <h:h3>What We Do</h:h3>
+        <h:br/>
+        <h:div class="row">
+            <h:div class="col-sm-4">
+                <h:img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                       alt="Image"/>
+                <h:p>Current Project</h:p>
+            </h:div>
+            <h:div class="col-sm-4">
+                <h:img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                       alt="Image"/>
+                <h:p>Project 2</h:p>
+            </h:div>
+            <h:div class="col-sm-4">
+                <h:div class="well">
+                    <h:p>Some text..</h:p>
+                </h:div>
+                <h:div class="well">
+                    <h:p>Some text..</h:p>
+                </h:div>
+            </h:div>
+        </h:div>
+    </h:div>
+    <h:br/>
+
+    <h:footer class="container-fluid text-center">
+        <h:p>Footer Text</h:p>
+    </h:footer>
+</zk>

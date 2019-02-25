@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+}
+
+.padding-0{
+    padding: 0;
+}
+
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
+    background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#222));
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-radius: 0px!important;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.foot-margin-p{
+    margin: 20px 0 10px;
+}
+
+.z-combobox-input, .z-bandbox-input, .z-datebox-input, .z-timebox-input, .z-spinner-input, .z-doublespinner-input {
+    font-family: Arial,Sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    height: 24px;
+    border: 1px solid #cfcfcf;
+    border-right: 0;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    margin: 0;
+    padding: 4px 5px;
+    line-height: 14px;
+    background: #fff;
+    height: 34px;
+}
+
+.z-timebox-button, .z-spinner-button, .z-doublespinner-button {
+    padding: 0;
+    position: relative;
+    height: 34px;
+}

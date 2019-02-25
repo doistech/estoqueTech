@@ -1,0 +1,51 @@
+<zk xmlns:h="http://www.w3.org/1999/xhtml" xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <n:nav class="navbar navbar-inverse">
+        <n:div class="container-fluid">
+            <n:div class="navbar-header">
+                <n:a class="navbar-brand" href="#">EstoqueTech 1.0</n:a>
+            </n:div>
+            <n:ul class="nav navbar-nav">
+                <n:li class="active"><n:a href="#">Home</n:a></n:li>
+                <!--<n:li><n:a href="#">Pedidos</n:a></n:li>-->
+                <n:li class="dropdown">
+                    <n:a class="dropdown-toggle" data-toggle="dropdown" href="#">Pedidos
+                        <n:span class="caret"></n:span></n:a>
+                    <n:ul class="dropdown-menu">
+                        <n:li><n:a href="#">Fazer Pedidos </n:a></n:li>
+                        <!--<n:li><n:a href="#">Pedidos Feitos</n:a></n:li>-->
+                        <n:li><n:a href="#">Consultar Pedidos</n:a></n:li>
+                    </n:ul>
+                </n:li>
+                <!--<n:li><n:a href="#">Cadastros</n:a></n:li>-->
+                <n:li class="dropdown">
+                    <n:a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros
+                        <n:span class="caret"></n:span></n:a>
+                    <n:ul class="dropdown-menu">
+                        <n:li><n:a href="#">Clientes</n:a></n:li>
+                        <n:li><n:a href="#">Produtos</n:a></n:li>
+                    </n:ul>
+                </n:li>
+                <n:li class="dropdown">
+                    <n:a class="dropdown-toggle" data-toggle="dropdown" href="#">Estoque
+                        <n:span class="caret"></n:span></n:a>
+                    <n:ul class="dropdown-menu">
+                        <n:li><n:a href="#">Entrada de Estoque</n:a></n:li>
+                        <n:li><n:a href="#">Consulta Estoque</n:a></n:li>
+                    </n:ul>
+                </n:li>
+                <n:li class="dropdown">
+                    <n:a class="dropdown-toggle" data-toggle="dropdown" href="#">Financeiro
+                        <n:span class="caret"></n:span></n:a>
+                    <n:ul class="dropdown-menu">
+                        <n:li><n:a href="#">Extrato</n:a></n:li>
+                        <!--<n:li><n:a href="#">Pedidos</n:a></n:li>-->
+                    </n:ul>
+                </n:li>
+            </n:ul>
+            <n:ul class="nav navbar-nav navbar-right">
+                <n:li><n:a href="#"><n:span class="glyphicon glyphicon-user"></n:span> Olá, logado</n:a></n:li>
+                <n:li><n:a href="#"><n:span class="glyphicon glyphicon-log-in"></n:span> Sair</n:a></n:li>
+            </n:ul>
+        </n:div>
+    </n:nav>
+</zk>
